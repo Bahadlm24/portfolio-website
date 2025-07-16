@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahadır Perveli - Software Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Page Loader -->
+    <div class="page-loader"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>BP</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Ana Sayfa</a></li>
+                <li><a href="#about" class="nav-link">Hakkımda</a></li>
+                <li><a href="#experience" class="nav-link">Deneyim</a></li>
+                <li><a href="#skills" class="nav-link">Beceriler</a></li>
+                <li><a href="#contact" class="nav-link">İletişim</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <button id="theme-btn" class="theme-btn">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Merhaba, Ben <span class="highlight">Bahadır Perveli</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Software Developer</h2>
+                    <p class="hero-description">
+                        5+ yıllık deneyime sahip bir yazılım geliştiriciyim. .NET teknolojileri, CRM sistemleri, API geliştirme ve veritabanı yönetimi konularında uzmanlaştım. 6 farklı şirkette 15+ başarılı proje teslim ederek işlevsel ve sürdürülebilir çözümler üretmeye odaklıyım.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">İletişime Geç</a>
+                        <a href="#about" class="btn btn-secondary">Daha Fazla Bilgi</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about reveal-section">
+        <div class="container">
+            <h2 class="section-title reveal-child">Hakkımda</h2>
+            <div class="about-content">
+                <div class="about-text reveal-child">
+                    <p>
+                        Yazılım geliştirme alanında tutkulu ve deneyimli bir profesyonelim. 
+                        Özellikle CRM projelerinde sistem entegrasyonu, veri analizi ve modül geliştirme konularında aktif rol alıyorum.
+                    </p>
+                    <p>
+                        .NET teknolojileri ile güçlü REST API'ler geliştiriyor, veritabanı optimizasyonları yapıyor 
+                        ve kurumsal süreçlerin dijitalleşmesine katkıda bulunuyorum.
+                    </p>
+                </div>
+                <div class="about-stats reveal-child">
+                    <div class="stat reveal-child">
+                        <h3 class="stat-number" data-count="6">0</h3>
+                        <p>Farklı Şirket</p>
+                    </div>
+                    <div class="stat reveal-child">
+                        <h3 class="stat-number" data-count="5" data-suffix="+">0+</h3>
+                        <p>Yıl Deneyim</p>
+                    </div>
+                    <div class="stat reveal-child">
+                        <h3 class="stat-number" data-count="15" data-suffix="+">0+</h3>
+                        <p>Başarılı Proje</p>
+                    </div>
+                    <div class="stat">
+                        <h3>2</h3>
+                        <p>Üniversite Derecesi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience reveal-section">
+        <div class="container">
+            <h2 class="section-title reveal-child">İş Deneyimi</h2>
+            
+            <!-- Experience Filter Tabs -->
+            <div class="experience-tabs reveal-child">
+                <button class="tab-btn active" data-tab="current">Güncel Deneyim</button>
+                <button class="tab-btn" data-tab="previous">Önceki Deneyimler</button>
+                <button class="tab-btn" data-tab="all">Tüm Projeler</button>
+            </div>
+            
+            <!-- Current Experience -->
+            <div class="tab-content active" id="current">
+                <div class="experience-grid">
+                    <div class="company-card featured">
+                        <div class="company-header">
+                            <div class="company-logo">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="company-info">
+                                <h3>Uzman CRM</h3>
+                                <h4>Full Stack Developer</h4>
+                                <span class="duration">Eki 2024 - Devam Ediyor</span>
+                                <span class="location">İstanbul</span>
+                            </div>
+                            <div class="status-badge current">
+                                <i class="fas fa-circle"></i> Aktif
+                            </div>
+                        </div>
+                        
+                        <div class="projects-showcase">
+                            <div class="project-stats">
+                                <div class="stat-item">
+                                    <span class="number">7</span>
+                                    <span class="label">Aktif Proje</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="number">5</span>
+                                    <span class="label">Teknoloji</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="number">3+</span>
+                                    <span class="label">Ay</span>
+                                </div>
+                            </div>
+                            
+                            <div class="tech-stack">
+                                <span class="tech-tag">.NET</span>
+                                <span class="tech-tag">C#</span>
+                                <span class="tech-tag">SQL</span>
+                                <span class="tech-tag">API</span>
+                                <span class="tech-tag">CRM</span>
+                            </div>
+                            
+                            <div class="project-highlights">
+                                <div class="highlight-item">
+                                    <i class="fas fa-shopping-bag"></i>
+                                    <span>Penti CRM - SQL raporlama ve .NET geliştirme</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-tshirt"></i>
+                                    <span>Koton CRM - Server-client optimizasyonu</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-shoe-prints"></i>
+                                    <span>Ayakkabı Dünyası - Performans analizi</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="company-card">
+                        <div class="company-header">
+                            <div class="company-logo">
+                                <i class="fas fa-industry"></i>
+                            </div>
+                            <div class="company-info">
+                                <h3>Yöre Group</h3>
+                                <h4>Software Developer</h4>
+                                <span class="duration">Tem 2023 - Tem 2024</span>
+                                <span class="location">Kocaeli</span>
+                            </div>
+                            <div class="status-badge completed">
+                                <i class="fas fa-check"></i> Tamamlandı
+                            </div>
+                        </div>
+                        
+                        <div class="project-summary">
+                            <p>eBa Workflow modülünü sıfırdan geliştirdim ve CRM optimizasyon projeleri gerçekleştirdim.</p>
+                            <div class="achievement-tags">
+                                <span class="achievement-tag">Workflow Modülü</span>
+                                <span class="achievement-tag">ERP Entegrasyonu</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Previous Experience -->
+            <div class="tab-content" id="previous">
+                <div class="timeline-compact">
+                    <div class="timeline-year">
+                        <h3>2023</h3>
+                        <div class="year-companies">
+                            <div class="company-mini">
+                                <h4>AFE Dijital</h4>
+                                <p>Full Stack Developer & Web Developer</p>
+                                <span>CRM & Microsoft 365 Entegrasyonu</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-year">
+                        <h3>2022</h3>
+                        <div class="year-companies">
+                            <div class="company-mini">
+                                <h4>Gökbim Yazılım</h4>
+                                <p>Software Developer</p>
+                                <span>Barkod Sistemleri & Satış Pazarlama</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-year">
+                        <h3>2019-2021</h3>
+                        <div class="year-companies">
+                            <div class="company-mini featured-past">
+                                <h4>Sanca Software</h4>
+                                <p>Software Developer</p>
+                                <span>İlk profesyonel deneyim - Web uygulamaları geliştirme</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- All Projects -->
+            <div class="tab-content" id="all">
+                <div class="projects-masonry">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
+                        <h4>Penti CRM</h4>
+                        <p>SQL raporlama, .NET geliştirme</p>
+                        <span class="project-company">Uzman CRM</span>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <h4>Koton CRM</h4>
+                        <p>Server-client mimarisi optimizasyonu</p>
+                        <span class="project-company">Uzman CRM</span>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-shoe-prints"></i>
+                        </div>
+                        <h4>Ayakkabı Dünyası</h4>
+                        <p>Performans analizi ve rapor otomasyonu</p>
+                        <span class="project-company">Uzman CRM</span>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Ingage CRM</h4>
+                        <p>Modül entegrasyonu ve geliştirme</p>
+                        <span class="project-company">Uzman CRM</span>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h4>eBa Workflow</h4>
+                        <p>Workflow modülü sıfırdan geliştirme</p>
+                        <span class="project-company">Yöre Group</span>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h4>Microsoft 365 Entegrasyonu</h4>
+                        <p>CRM ve Office 365 entegrasyonu</p>
+                        <span class="project-company">AFE Dijital</span>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h4>Web Uygulamaları</h4>
+                        <p>C# ve .NET ile özel çözümler</p>
+                        <span class="project-company">Sanca Software</span>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-barcode"></i>
+                        </div>
+                        <h4>Barkod Sistemleri</h4>
+                        <p>Satış ve pazarlama sistemleri</p>
+                        <span class="project-company">Gökbim</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills reveal-section">
+        <div class="container">
+            <h2 class="section-title reveal-child">Teknik Beceriler</h2>
+            <div class="skills-grid reveal-child">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programlama Dilleri</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">C#</span>
+                                <span class="skill-level">7/10</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-level">7/10</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">HTML</span>
+                                <span class="skill-level">9/10</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">CSS</span>
+                                <span class="skill-level">8/10</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-layer-group"></i> Framework'ler</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">.NET Framework</span>
+                                <span class="skill-level">7/10</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">ASP.NET</span>
+                                <span class="skill-level">7/10</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">.NET Core</span>
+                                <span class="skill-level">5/10</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="50"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Veritabanları</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">SQL Server</span>
+                                <span class="skill-level">10/10</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">PostgreSQL</span>
+                                <span class="skill-level">8/10</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-cogs"></i> Teknolojiler</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">RESTful API</span>
+                                <span class="skill-level">9/10</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">JSON</span>
+                                <span class="skill-level">7/10</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">XML</span>
+                                <span class="skill-level">6/10</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="60"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">SSIS</span>
+                                <span class="skill-level">7/10</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Araçlar</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Visual Studio</span>
+                                <span class="skill-level">8/10</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Git</span>
+                                <span class="skill-level">6/10</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="60"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Jira</span>
+                                <span class="skill-level">8/10</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">IIS</span>
+                                <span class="skill-level">5/10</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="50"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-language"></i> Diller</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Türkçe</span>
+                                <span class="skill-level">Anadil</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress native" data-level="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">İngilizce</span>
+                                <span class="skill-level">B2</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress intermediate" data-level="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Almanca</span>
+                                <span class="skill-level">A1</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress beginner" data-level="20"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Eğitim & Sertifikalar</h2>
+            <div class="education-grid">
+                <div class="education-section">
+                    <h3><i class="fas fa-graduation-cap"></i> Eğitim</h3>
+                    <div class="education-item">
+                        <h4>Yönetim Bilişim Sistemleri (Lisans)</h4>
+                        <p>Anadolu Üniversitesi</p>
+                        <span>2022 - 2025</span>
+                    </div>
+                    <div class="education-item">
+                        <h4>Bilgisayar Programcılığı (Ön Lisans)</h4>
+                        <p>Dokuz Eylül Üniversitesi</p>
+                        <span>2018 - 2022</span>
+                    </div>
+                </div>
+                <div class="education-section">
+                    <h3><i class="fas fa-certificate"></i> Sertifikalar</h3>
+                    <div class="education-item">
+                        <h4>Azure Fundamentals</h4>
+                        <p>Microsoft Learn</p>
+                        <span>2023</span>
+                    </div>
+                    <div class="education-item">
+                        <h4>.NET Core & SQL ile REST API Geliştirme</h4>
+                        <p>Udemy</p>
+                        <span>2024</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">İletişim</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:bahadirperveli01@gmail.com">bahadirperveli01@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefon</h4>
+                            <a href="tel:+905305056648">+90 530 505 66 48</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Adres</h4>
+                            <p>Küçüksu Mah. Kaldırım Cad. No:67<br>Üsküdar / İstanbul</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Adınız" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email Adresiniz" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Konu" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Mesajınız" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Mesaj Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Bahadır Perveli. Tüm hakları saklıdır.</p>
+                <div class="social-links">
+                    <a href="mailto:bahadirperveli01@gmail.com" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+905305056648" title="Telefon">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
