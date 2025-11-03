@@ -454,6 +454,8 @@ p {
     color: white;
     font-weight: 700;
     font-size: var(--font-size-xl);
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+    will-change: transform;
 }
 
 .stack-card i { font-size: 2rem; }
@@ -462,7 +464,27 @@ p {
 .stack-card.secondary { background: linear-gradient(135deg, #10b981, #059669); transform: rotate(6deg) translate(10px, 10px); }
 .stack-card.tertiary { background: linear-gradient(135deg, #f59e0b, #d97706); transform: translate(0, 0); }
 
-.stack-card:hover { transform: scale(1.02); }
+/* Fan-out interaction on hover or when toggled with .spread */
+.card-stack:hover .stack-card,
+.card-stack.spread .stack-card { box-shadow: 0 24px 48px var(--shadow); }
+
+.card-stack:hover .stack-card.primary,
+.card-stack.spread .stack-card.primary {
+    transform: translate(-130px, 0) rotate(-6deg);
+    z-index: 1;
+}
+
+.card-stack:hover .stack-card.secondary,
+.card-stack.spread .stack-card.secondary {
+    transform: translate(0, 0) rotate(0deg);
+    z-index: 2;
+}
+
+.card-stack:hover .stack-card.tertiary,
+.card-stack.spread .stack-card.tertiary {
+    transform: translate(130px, 0) rotate(6deg);
+    z-index: 3;
+}
 
 /* Featured carousel */
 .featured { background: var(--surface); }

@@ -228,6 +228,35 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+// Card stack: enable tap-to-spread on touch/mobile
+document.addEventListener('DOMContentLoaded', () => {
+    const stacks = document.querySelectorAll('.card-stack');
+    if (!stacks.length) return;
+
+    const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0 || window.innerWidth <= 768;
+
+    stacks.forEach(stack => {
+        // Improve a11y semantics
+        stack.setAttribute('role', 'button');
+        stack.setAttribute('tabindex', '0');
+        stack.setAttribute('aria-label', 'Show technology cards');
+
+        if (isTouch) {
+            const toggle = () => stack.classList.toggle('spread');
+            stack.addEventListener('click', toggle);
+            stack.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    toggle();
+                }
+            });
+            document.addEventListener('click', (e) => {
+                if (!stack.contains(e.target)) stack.classList.remove('spread');
+            });
+        }
+    });
+});
+
 // Featured carousel controls
 document.addEventListener('DOMContentLoaded', () => {
     const track = document.getElementById('featuredTrack');
