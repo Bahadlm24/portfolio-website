@@ -458,6 +458,23 @@ p {
     will-change: transform;
 }
 
+/* Corner label visible even when stacked */
+.stack-card::after {
+    content: attr(data-label);
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.28);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+}
+
 .stack-card i { font-size: 2rem; }
 
 .stack-card.primary { background: linear-gradient(135deg, #3b82f6, #1d4ed8); transform: rotate(-6deg) translate(-10px, -10px); }
