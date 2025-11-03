@@ -19,14 +19,15 @@
                 <h2>BP</h2>
             </div>
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Ana Sayfa</a></li>
-                <li><a href="#about" class="nav-link">Hakkımda</a></li>
-                <li><a href="#experience" class="nav-link">Deneyim</a></li>
-                <li><a href="#skills" class="nav-link">Beceriler</a></li>
-                <li><a href="#contact" class="nav-link">İletişim</a></li>
+                <li><a href="#home" class="nav-link" data-i18n="nav.home">Ana Sayfa</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav.about">Hakkımda</a></li>
+                <li><a href="#experience" class="nav-link" data-i18n="nav.experience">Deneyim</a></li>
+                <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Beceriler</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav.contact">İletişim</a></li>
             </ul>
             <div class="theme-toggle">
-                <button id="theme-btn" class="theme-btn">
+                <button id="lang-btn" class="lang-btn" aria-label="Change language">EN</button>
+                <button id="theme-btn" class="theme-btn" aria-label="Toggle theme">
                     <i class="fas fa-moon"></i>
                 </button>
             </div>
@@ -43,16 +44,14 @@
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1 class="hero-title">
-                        Merhaba, Ben <span class="highlight">Bahadır Perveli</span>
-                    </h1>
-                    <h2 class="hero-subtitle">Software Developer</h2>
-                    <p class="hero-description">
+                    <h1 class="hero-title" data-i18n-html="hero.title">Merhaba, Ben <span class="highlight">Bahadır Perveli</span></h1>
+                    <h2 class="hero-subtitle" data-i18n="hero.subtitle">Software Developer</h2>
+                    <p class="hero-description" data-i18n="hero.description">
                         5+ yıllık deneyime sahip bir yazılım geliştiriciyim. .NET teknolojileri, CRM sistemleri, API geliştirme ve veritabanı yönetimi konularında uzmanlaştım. 6 farklı şirkette 15+ başarılı proje teslim ederek işlevsel ve sürdürülebilir çözümler üretmeye odaklıyım.
                     </p>
                     <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">İletişime Geç</a>
-                        <a href="#about" class="btn btn-secondary">Daha Fazla Bilgi</a>
+                        <a href="#contact" class="btn btn-primary" data-i18n="hero.ctaContact">İletişime Geç</a>
+                        <a href="#about" class="btn btn-secondary" data-i18n="hero.ctaMore">Daha Fazla Bilgi</a>
                     </div>
                 </div>
                 <div class="hero-image">
@@ -67,14 +66,14 @@
     <!-- About Section -->
     <section id="about" class="about reveal-section">
         <div class="container">
-            <h2 class="section-title reveal-child">Hakkımda</h2>
+            <h2 class="section-title reveal-child" data-i18n="about.title">Hakkımda</h2>
             <div class="about-content">
                 <div class="about-text reveal-child">
-                    <p>
+                    <p data-i18n="about.p1">
                         Yazılım geliştirme alanında tutkulu ve deneyimli bir profesyonelim. 
                         Özellikle CRM projelerinde sistem entegrasyonu, veri analizi ve modül geliştirme konularında aktif rol alıyorum.
                     </p>
-                    <p>
+                    <p data-i18n="about.p2">
                         .NET teknolojileri ile güçlü REST API'ler geliştiriyor, veritabanı optimizasyonları yapıyor 
                         ve kurumsal süreçlerin dijitalleşmesine katkıda bulunuyorum.
                     </p>
@@ -82,19 +81,19 @@
                 <div class="about-stats reveal-child">
                     <div class="stat reveal-child">
                         <h3 class="stat-number" data-count="6">0</h3>
-                        <p>Farklı Şirket</p>
+                        <p data-i18n="about.statCompanies">Farklı Şirket</p>
                     </div>
                     <div class="stat reveal-child">
                         <h3 class="stat-number" data-count="5" data-suffix="+">0+</h3>
-                        <p>Yıl Deneyim</p>
+                        <p data-i18n="about.statYears">Yıl Deneyim</p>
                     </div>
                     <div class="stat reveal-child">
                         <h3 class="stat-number" data-count="15" data-suffix="+">0+</h3>
-                        <p>Başarılı Proje</p>
+                        <p data-i18n="about.statProjects">Başarılı Proje</p>
                     </div>
                     <div class="stat">
                         <h3>2</h3>
-                        <p>Üniversite Derecesi</p>
+                        <p data-i18n="about.statDegrees">Üniversite Derecesi</p>
                     </div>
                 </div>
             </div>
@@ -104,13 +103,13 @@
     <!-- Experience Section -->
     <section id="experience" class="experience reveal-section">
         <div class="container">
-            <h2 class="section-title reveal-child">İş Deneyimi</h2>
+            <h2 class="section-title reveal-child" data-i18n="experience.title">İş Deneyimi</h2>
             
             <!-- Experience Filter Tabs -->
             <div class="experience-tabs reveal-child">
-                <button class="tab-btn active" data-tab="current">Güncel Deneyim</button>
-                <button class="tab-btn" data-tab="previous">Önceki Deneyimler</button>
-                <button class="tab-btn" data-tab="all">Tüm Projeler</button>
+                <button class="tab-btn active" data-tab="current" data-i18n="tabs.current">Güncel Deneyim</button>
+                <button class="tab-btn" data-tab="previous" data-i18n="tabs.previous">Önceki Deneyimler</button>
+                <button class="tab-btn" data-tab="all" data-i18n="tabs.all">Tüm Projeler</button>
             </div>
             
             <!-- Current Experience -->
@@ -124,11 +123,11 @@
                             <div class="company-info">
                                 <h3>Uzman CRM</h3>
                                 <h4>Full Stack Developer</h4>
-                                <span class="duration">Eki 2024 - Devam Ediyor</span>
+                                <span class="duration" data-i18n="experience.currentDuration">Eki 2024 - Devam Ediyor</span>
                                 <span class="location">İstanbul</span>
                             </div>
                             <div class="status-badge current">
-                                <i class="fas fa-circle"></i> Aktif
+                                <i class="fas fa-circle"></i> <span data-i18n="status.active">Aktif</span>
                             </div>
                         </div>
                         
@@ -136,15 +135,15 @@
                             <div class="project-stats">
                                 <div class="stat-item">
                                     <span class="number">7</span>
-                                    <span class="label">Aktif Proje</span>
+                                    <span class="label" data-i18n="experience.statActiveProjects">Aktif Proje</span>
                                 </div>
                                 <div class="stat-item">
                                     <span class="number">5</span>
-                                    <span class="label">Teknoloji</span>
+                                    <span class="label" data-i18n="experience.statTechnologies">Teknoloji</span>
                                 </div>
                                 <div class="stat-item">
                                     <span class="number">3+</span>
-                                    <span class="label">Ay</span>
+                                    <span class="label" data-i18n="experience.statMonths">Ay</span>
                                 </div>
                             </div>
                             
@@ -185,12 +184,12 @@
                                 <span class="location">Kocaeli</span>
                             </div>
                             <div class="status-badge completed">
-                                <i class="fas fa-check"></i> Tamamlandı
+                                <i class="fas fa-check"></i> <span data-i18n="status.completed">Tamamlandı</span>
                             </div>
                         </div>
                         
                         <div class="project-summary">
-                            <p>eBa Workflow modülünü sıfırdan geliştirdim ve CRM optimizasyon projeleri gerçekleştirdim.</p>
+                            <p data-i18n="experience.yoreDesc">eBa Workflow modülünü sıfırdan geliştirdim ve CRM optimizasyon projeleri gerçekleştirdim.</p>
                             <div class="achievement-tags">
                                 <span class="achievement-tag">Workflow Modülü</span>
                                 <span class="achievement-tag">ERP Entegrasyonu</span>
@@ -320,10 +319,10 @@
     <!-- Skills Section -->
     <section id="skills" class="skills reveal-section">
         <div class="container">
-            <h2 class="section-title reveal-child">Teknik Beceriler</h2>
+            <h2 class="section-title reveal-child" data-i18n="skills.title">Teknik Beceriler</h2>
             <div class="skills-grid reveal-child">
                 <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Programlama Dilleri</h3>
+                    <h3><i class="fas fa-code"></i> <span data-i18n="skills.categories.languages">Programlama Dilleri</span></h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <div class="skill-header">
@@ -364,7 +363,7 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-layer-group"></i> Framework'ler</h3>
+                    <h3><i class="fas fa-layer-group"></i> <span data-i18n="skills.categories.frameworks">Framework'ler</span></h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <div class="skill-header">
@@ -396,7 +395,7 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-database"></i> Veritabanları</h3>
+                    <h3><i class="fas fa-database"></i> <span data-i18n="skills.categories.databases">Veritabanları</span></h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <div class="skill-header">
@@ -419,7 +418,7 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-cogs"></i> Teknolojiler</h3>
+                    <h3><i class="fas fa-cogs"></i> <span data-i18n="skills.categories.tech">Teknolojiler</span></h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <div class="skill-header">
@@ -460,7 +459,7 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Araçlar</h3>
+                    <h3><i class="fas fa-tools"></i> <span data-i18n="skills.categories.tools">Araçlar</span></h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <div class="skill-header">
@@ -501,12 +500,12 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-language"></i> Diller</h3>
+                    <h3><i class="fas fa-language"></i> <span data-i18n="skills.categories.spoken">Diller</span></h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <div class="skill-header">
-                                <span class="skill-name">Türkçe</span>
-                                <span class="skill-level">Anadil</span>
+                                <span class="skill-name" data-i18n="spoken.turkish">Türkçe</span>
+                                <span class="skill-level" data-i18n="spoken.native">Anadil</span>
                             </div>
                             <div class="skill-bar">
                                 <div class="skill-progress native" data-level="100"></div>
@@ -514,7 +513,7 @@
                         </div>
                         <div class="skill-item">
                             <div class="skill-header">
-                                <span class="skill-name">İngilizce</span>
+                                <span class="skill-name" data-i18n="spoken.english">İngilizce</span>
                                 <span class="skill-level">B2</span>
                             </div>
                             <div class="skill-bar">
@@ -523,7 +522,7 @@
                         </div>
                         <div class="skill-item">
                             <div class="skill-header">
-                                <span class="skill-name">Almanca</span>
+                                <span class="skill-name" data-i18n="spoken.german">Almanca</span>
                                 <span class="skill-level">A1</span>
                             </div>
                             <div class="skill-bar">
@@ -539,10 +538,10 @@
     <!-- Education & Certifications -->
     <section id="education" class="education">
         <div class="container">
-            <h2 class="section-title">Eğitim & Sertifikalar</h2>
+            <h2 class="section-title" data-i18n="education.title">Eğitim & Sertifikalar</h2>
             <div class="education-grid">
                 <div class="education-section">
-                    <h3><i class="fas fa-graduation-cap"></i> Eğitim</h3>
+                    <h3><i class="fas fa-graduation-cap"></i> <span data-i18n="education.education">Eğitim</span></h3>
                     <div class="education-item">
                         <h4>Yönetim Bilişim Sistemleri (Lisans)</h4>
                         <p>Anadolu Üniversitesi</p>
@@ -555,7 +554,7 @@
                     </div>
                 </div>
                 <div class="education-section">
-                    <h3><i class="fas fa-certificate"></i> Sertifikalar</h3>
+                    <h3><i class="fas fa-certificate"></i> <span data-i18n="education.certificates">Sertifikalar</span></h3>
                     <div class="education-item">
                         <h4>Azure Fundamentals</h4>
                         <p>Microsoft Learn</p>
@@ -574,27 +573,27 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">İletişim</h2>
+            <h2 class="section-title" data-i18n="contact.title">İletişim</h2>
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <div>
-                            <h4>Email</h4>
+                            <h4 data-i18n="contact.email">Email</h4>
                             <a href="mailto:bahadirperveli01@gmail.com">bahadirperveli01@gmail.com</a>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
                         <div>
-                            <h4>Telefon</h4>
+                            <h4 data-i18n="contact.phone">Telefon</h4>
                             <a href="tel:+905305056648">+90 530 505 66 48</a>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
-                            <h4>Adres</h4>
+                            <h4 data-i18n="contact.address">Adres</h4>
                             <p>Küçüksu Mah. Kaldırım Cad. No:67<br>Üsküdar / İstanbul</p>
                         </div>
                     </div>
@@ -602,18 +601,18 @@
                 <div class="contact-form">
                     <form id="contactForm">
                         <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Adınız" required>
+                            <input type="text" id="name" name="name" placeholder="Adınız" data-i18n-placeholder="form.name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Email Adresiniz" required>
+                            <input type="email" id="email" name="email" placeholder="Email Adresiniz" data-i18n-placeholder="form.email" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Konu" required>
+                            <input type="text" id="subject" name="subject" placeholder="Konu" data-i18n-placeholder="form.subject" required>
                         </div>
                         <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Mesajınız" rows="5" required></textarea>
+                            <textarea id="message" name="message" placeholder="Mesajınız" data-i18n-placeholder="form.message" rows="5" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Mesaj Gönder</button>
+                        <button type="submit" class="btn btn-primary" data-i18n="form.send">Mesaj Gönder</button>
                     </form>
                 </div>
             </div>
@@ -624,7 +623,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2024 Bahadır Perveli. Tüm hakları saklıdır.</p>
+                <p data-i18n="footer.rights">&copy; 2024 Bahadır Perveli. Tüm hakları saklıdır.</p>
                 <div class="social-links">
                     <a href="mailto:bahadirperveli01@gmail.com" title="Email">
                         <i class="fas fa-envelope"></i>

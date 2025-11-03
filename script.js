@@ -1,3 +1,171 @@
+// Language & Theme
+const htmlTag = document.documentElement;
+
+// Translations
+const translations = {
+    tr: {
+        nav: { home: 'Ana Sayfa', about: 'Hakkımda', experience: 'Deneyim', skills: 'Beceriler', contact: 'İletişim' },
+        hero: {
+            title: 'Merhaba, Ben <span class="highlight">Bahadır Perveli</span>',
+            subtitle: 'Yazılım Geliştirici',
+            description: '5+ yıllık deneyime sahip bir yazılım geliştiriciyim. .NET teknolojileri, CRM sistemleri, API geliştirme ve veritabanı yönetimi konularında uzmanlaştım. 6 farklı şirkette 15+ başarılı proje teslim ederek işlevsel ve sürdürülebilir çözümler üretmeye odaklıyım.',
+            ctaContact: 'İletişime Geç',
+            ctaMore: 'Daha Fazla Bilgi'
+        },
+        about: {
+            title: 'Hakkımda',
+            p1: 'Yazılım geliştirme alanında tutkulu ve deneyimli bir profesyonelim. Özellikle CRM projelerinde sistem entegrasyonu, veri analizi ve modül geliştirme konularında aktif rol alıyorum.',
+            p2: '.NET teknolojileri ile güçlü REST API\'ler geliştiriyor, veritabanı optimizasyonları yapıyor ve kurumsal süreçlerin dijitalleşmesine katkıda bulunuyorum.',
+            statCompanies: 'Farklı Şirket',
+            statYears: 'Yıl Deneyim',
+            statProjects: 'Başarılı Proje',
+            statDegrees: 'Üniversite Derecesi'
+        },
+        experience: {
+            title: 'İş Deneyimi',
+            currentDuration: 'Eki 2024 - Devam Ediyor',
+            statActiveProjects: 'Aktif Proje',
+            statTechnologies: 'Teknoloji',
+            statMonths: 'Ay',
+            yoreDesc: 'eBa Workflow modülünü sıfırdan geliştirdim ve CRM optimizasyon projeleri gerçekleştirdim.'
+        },
+        tabs: { current: 'Güncel Deneyim', previous: 'Önceki Deneyimler', all: 'Tüm Projeler' },
+        status: { active: 'Aktif', completed: 'Tamamlandı' },
+        skills: {
+            title: 'Teknik Beceriler',
+            categories: {
+                languages: 'Programlama Dilleri',
+                frameworks: "Framework'ler",
+                databases: 'Veritabanları',
+                tech: 'Teknolojiler',
+                tools: 'Araçlar',
+                spoken: 'Diller'
+            }
+        },
+        spoken: { turkish: 'Türkçe', english: 'İngilizce', german: 'Almanca', native: 'Anadil' },
+        education: { title: 'Eğitim & Sertifikalar', education: 'Eğitim', certificates: 'Sertifikalar' },
+        contact: { title: 'İletişim', email: 'Email', phone: 'Telefon', address: 'Adres' },
+        form: { name: 'Adınız', email: 'Email Adresiniz', subject: 'Konu', message: 'Mesajınız', send: 'Mesaj Gönder', sending: 'Gönderiliyor...' },
+        footer: { rights: '© 2024 Bahadır Perveli. Tüm hakları saklıdır.' },
+        notify: { emailSent: 'Mesajınız başarıyla gönderildi! En kısa sürede size dönüş yapacağım.', copyEmail: 'Email adresi kopyalandı!', copyPhone: 'Telefon numarası kopyalandı!', emailOpening: 'Email istemcisi açılıyor... (SMTP servisi şu anda kullanılamıyor)' }
+    },
+    en: {
+        nav: { home: 'Home', about: 'About', experience: 'Experience', skills: 'Skills', contact: 'Contact' },
+        hero: {
+            title: 'Hi, I\'m <span class="highlight">Bahadır Perveli</span>',
+            subtitle: 'Software Developer',
+            description: 'I\'m a software developer with 5+ years of experience. I specialize in .NET technologies, CRM systems, API development, and database management. I delivered 15+ successful projects across 6 companies, focusing on functional and maintainable solutions.',
+            ctaContact: 'Contact Me',
+            ctaMore: 'Learn More'
+        },
+        about: {
+            title: 'About Me',
+            p1: 'I\'m a passionate and experienced professional in software development. I actively work on system integration, data analysis, and module development in CRM projects.',
+            p2: 'I build robust REST APIs with .NET, optimize databases, and contribute to the digitalization of enterprise processes.',
+            statCompanies: 'Companies',
+            statYears: 'Years Experience',
+            statProjects: 'Successful Projects',
+            statDegrees: 'University Degrees'
+        },
+        experience: {
+            title: 'Experience',
+            currentDuration: 'Oct 2024 - Present',
+            statActiveProjects: 'Active Projects',
+            statTechnologies: 'Technologies',
+            statMonths: 'Months',
+            yoreDesc: 'Developed the eBa Workflow module from scratch and executed CRM optimization projects.'
+        },
+        tabs: { current: 'Current Experience', previous: 'Previous Experience', all: 'All Projects' },
+        status: { active: 'Active', completed: 'Completed' },
+        skills: {
+            title: 'Technical Skills',
+            categories: {
+                languages: 'Programming Languages',
+                frameworks: 'Frameworks',
+                databases: 'Databases',
+                tech: 'Technologies',
+                tools: 'Tools',
+                spoken: 'Languages'
+            }
+        },
+        spoken: { turkish: 'Turkish', english: 'English', german: 'German', native: 'Native' },
+        education: { title: 'Education & Certificates', education: 'Education', certificates: 'Certificates' },
+        contact: { title: 'Contact', email: 'Email', phone: 'Phone', address: 'Address' },
+        form: { name: 'Your Name', email: 'Your Email', subject: 'Subject', message: 'Your Message', send: 'Send Message', sending: 'Sending...' },
+        footer: { rights: '© 2024 Bahadır Perveli. All rights reserved.' },
+        notify: { emailSent: 'Your message has been sent successfully! I will get back to you shortly.', copyEmail: 'Email address copied!', copyPhone: 'Phone number copied!', emailOpening: 'Opening email client... (SMTP service is not available right now)' }
+    }
+};
+
+function applyTranslations(lang) {
+    const dict = translations[lang] || translations.tr;
+    // Elements with textContent
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        const parts = key.split('.');
+        let value = dict;
+        parts.forEach(p => value = value ? value[p] : undefined);
+        if (typeof value === 'string') {
+            el.textContent = value;
+        }
+    });
+    // Elements that expect HTML (e.g., hero title with span)
+    document.querySelectorAll('[data-i18n-html]').forEach(el => {
+        const key = el.getAttribute('data-i18n-html');
+        const parts = key.split('.');
+        let value = dict;
+        parts.forEach(p => value = value ? value[p] : undefined);
+        if (typeof value === 'string') {
+            el.innerHTML = value;
+        }
+    });
+    // Placeholders
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+        const key = el.getAttribute('data-i18n-placeholder');
+        const parts = key.split('.');
+        let value = dict;
+        parts.forEach(p => value = value ? value[p] : undefined);
+        if (typeof value === 'string') {
+            el.setAttribute('placeholder', value);
+        }
+    });
+    // Update html lang and document title
+    htmlTag.setAttribute('lang', lang);
+    document.title = lang === 'en' ? 'Bahadır Perveli - Software Developer' : 'Bahadır Perveli - Yazılım Geliştirici';
+    // Update language button label
+    const langBtn = document.getElementById('lang-btn');
+    if (langBtn) langBtn.textContent = lang === 'en' ? 'TR' : 'EN';
+}
+
+function setLanguage(lang) {
+    localStorage.setItem('lang', lang);
+    applyTranslations(lang);
+}
+
+function getCurrentLang() {
+    return localStorage.getItem('lang') || 'tr';
+}
+
+function t(key) {
+    const parts = key.split('.');
+    let value = translations[getCurrentLang()];
+    parts.forEach(p => value = value ? value[p] : undefined);
+    return (typeof value === 'string') ? value : key;
+}
+
+// Initialize language on load
+document.addEventListener('DOMContentLoaded', () => {
+    const savedLang = localStorage.getItem('lang') || 'tr';
+    applyTranslations(savedLang);
+    const langBtn = document.getElementById('lang-btn');
+    if (langBtn) {
+        langBtn.addEventListener('click', () => {
+            const current = localStorage.getItem('lang') || 'tr';
+            setLanguage(current === 'tr' ? 'en' : 'tr');
+        });
+    }
+});
+
 // Theme Toggle Functionality
 const themeBtn = document.getElementById('theme-btn');
 const body = document.body;
@@ -315,7 +483,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     const originalText = submitBtn.textContent;
     
     // Loading state
-    submitBtn.textContent = 'Gönderiliyor...';
+    submitBtn.textContent = t('form.sending');
     submitBtn.disabled = true;
     
     // Get form data
@@ -333,7 +501,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     emailjs.send('your_service_id', 'your_template_id', templateParams)
         .then(function(response) {
             console.log('Email sent successfully:', response);
-            showNotification('Mesajınız başarıyla gönderildi! En kısa sürede size dönüş yapacağım.', 'success');
+            showNotification(t('notify.emailSent'), 'success');
             form.reset();
         })
         .catch(function(error) {
@@ -347,7 +515,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
             const mailtoLink = `mailto:bahadirperveli01@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`İsim: ${name}\nEmail: ${email}\n\nMesaj:\n${message}`)}`;
             window.location.href = mailtoLink;
             
-            showNotification('Email istemcisi açılıyor... (SMTP servisi şu anda kullanılamıyor)', 'info');
+            showNotification(t('notify.emailOpening'), 'info');
         })
         .finally(function() {
             // Reset button state
@@ -573,7 +741,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const email = emailLink.textContent;
             navigator.clipboard.writeText(email).then(() => {
-                showNotification('Email adresi kopyalandı!', 'success');
+                showNotification(t('notify.copyEmail'), 'success');
             });
         });
     }
@@ -583,7 +751,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const phone = phoneLink.textContent;
             navigator.clipboard.writeText(phone).then(() => {
-                showNotification('Telefon numarası kopyalandı!', 'success');
+                showNotification(t('notify.copyPhone'), 'success');
             });
         });
     }

@@ -202,6 +202,7 @@ p {
 .theme-toggle {
     display: flex;
     align-items: center;
+    gap: var(--spacing-xs);
 }
 
 .theme-btn {
@@ -216,6 +217,31 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Language toggle button */
+.lang-btn {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+    height: 40px;
+    padding: 0 12px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: 600;
+    font-size: var(--font-size-sm);
+}
+
+.lang-btn:hover {
+    background: rgba(37, 99, 235, 0.08);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* Dark theme lang button */
+[data-theme="dark"] .lang-btn {
+    border-color: var(--border);
 }
 
 .theme-btn:hover {
