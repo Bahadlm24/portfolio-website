@@ -29,6 +29,28 @@ const translations = {
             statMonths: 'Ay',
             yoreDesc: 'eBa Workflow modülünü sıfırdan geliştirdim ve CRM optimizasyon projeleri gerçekleştirdim.'
         },
+        exp: {
+            highlights: {
+                penti: 'Penti CRM - SQL raporlama ve .NET geliştirme',
+                koton: 'Koton CRM - Server-client optimizasyonu',
+                ayakkabi: 'Ayakkabı Dünyası - Performans analizi'
+            }
+        },
+        projects: {
+            penti: { desc: 'SQL raporlama, .NET geliştirme' },
+            koton: { desc: 'Server-client mimarisi optimizasyonu' },
+            ayakkabi: { desc: 'Performans analizi ve rapor otomasyonu' },
+            ingage: { desc: 'Modül entegrasyonu ve geliştirme' },
+            eba: { desc: 'Workflow modülü sıfırdan geliştirme' },
+            m365: { desc: 'CRM ve Office 365 entegrasyonu' },
+            webapps: { desc: 'C# ve .NET ile özel çözümler' },
+            barcode: { desc: 'Satış ve pazarlama sistemleri' }
+        },
+        timeline: {
+            afe: 'CRM & Microsoft 365 Entegrasyonu',
+            gokbim: 'Barkod Sistemleri & Satış Pazarlama',
+            sanca: 'İlk profesyonel deneyim - Web uygulamaları geliştirme'
+        },
         tabs: { current: 'Güncel Deneyim', previous: 'Önceki Deneyimler', all: 'Tüm Projeler' },
         status: { active: 'Aktif', completed: 'Tamamlandı' },
         skills: {
@@ -74,6 +96,28 @@ const translations = {
             statTechnologies: 'Technologies',
             statMonths: 'Months',
             yoreDesc: 'Developed the eBa Workflow module from scratch and executed CRM optimization projects.'
+        },
+        exp: {
+            highlights: {
+                penti: 'Penti CRM - SQL reporting and .NET development',
+                koton: 'Koton CRM - Server-client optimization',
+                ayakkabi: 'Ayakkabı Dünyası - Performance analysis'
+            }
+        },
+        projects: {
+            penti: { desc: 'SQL reporting, .NET development' },
+            koton: { desc: 'Server-client architecture optimization' },
+            ayakkabi: { desc: 'Performance analysis and report automation' },
+            ingage: { desc: 'Module integration and development' },
+            eba: { desc: 'Workflow module developed from scratch' },
+            m365: { desc: 'CRM and Office 365 integration' },
+            webapps: { desc: 'Custom solutions with C# and .NET' },
+            barcode: { desc: 'Sales and marketing systems' }
+        },
+        timeline: {
+            afe: 'CRM & Microsoft 365 Integration',
+            gokbim: 'Barcode Systems & Sales Marketing',
+            sanca: 'First professional experience - Web application development'
         },
         tabs: { current: 'Current Experience', previous: 'Previous Experience', all: 'All Projects' },
         status: { active: 'Active', completed: 'Completed' },
