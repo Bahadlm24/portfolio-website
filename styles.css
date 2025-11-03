@@ -459,11 +459,14 @@ p {
 }
 
 /* Corner label visible even when stacked */
-.stack-card::after {
-    content: attr(data-label);
+/* Corner badge element (icon + text) */
+.corner-badge {
     position: absolute;
     top: 12px;
     left: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
     font-size: var(--font-size-sm);
     font-weight: 700;
     letter-spacing: 0.3px;
@@ -473,7 +476,10 @@ p {
     background: rgba(0, 0, 0, 0.28);
     border: 1px solid rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(4px);
+    z-index: 4;
 }
+
+.corner-badge i { font-size: 0.9rem; }
 
 .stack-card i { font-size: 2rem; }
 
