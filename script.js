@@ -10,7 +10,8 @@ const translations = {
             subtitle: 'Yazılım Geliştirici',
             description: '5+ yıllık deneyime sahip bir yazılım geliştiriciyim. .NET teknolojileri, CRM sistemleri, API geliştirme ve veritabanı yönetimi konularında uzmanlaştım. 6 farklı şirkette 15+ başarılı proje teslim ederek işlevsel ve sürdürülebilir çözümler üretmeye odaklıyım.',
             ctaContact: 'İletişime Geç',
-            ctaMore: 'Daha Fazla Bilgi'
+            ctaMore: 'Daha Fazla Bilgi',
+            ctaProjects: 'Projeleri İncele'
         },
         about: {
             title: 'Hakkımda',
@@ -24,6 +25,7 @@ const translations = {
         experience: {
             title: 'İş Deneyimi',
             currentDuration: 'Eki 2024 - Devam Ediyor',
+            yoreDuration: 'Tem 2023 - Tem 2024',
             statActiveProjects: 'Aktif Proje',
             statTechnologies: 'Teknoloji',
             statMonths: 'Ay',
@@ -37,14 +39,14 @@ const translations = {
             }
         },
         projects: {
-            penti: { desc: 'SQL raporlama, .NET geliştirme' },
-            koton: { desc: 'Server-client mimarisi optimizasyonu' },
-            ayakkabi: { desc: 'Performans analizi ve rapor otomasyonu' },
-            ingage: { desc: 'Modül entegrasyonu ve geliştirme' },
-            eba: { desc: 'Workflow modülü sıfırdan geliştirme' },
-            m365: { desc: 'CRM ve Office 365 entegrasyonu' },
-            webapps: { desc: 'C# ve .NET ile özel çözümler' },
-            barcode: { desc: 'Satış ve pazarlama sistemleri' }
+            penti: { title: 'Penti CRM', desc: 'SQL raporlama, .NET geliştirme' },
+            koton: { title: 'Koton CRM', desc: 'Server-client mimarisi optimizasyonu' },
+            ayakkabi: { title: 'Ayakkabı Dünyası', desc: 'Performans analizi ve rapor otomasyonu' },
+            ingage: { title: 'Ingage CRM', desc: 'Modül entegrasyonu ve geliştirme' },
+            eba: { title: 'eBa Workflow', desc: 'Workflow modülü sıfırdan geliştirme' },
+            m365: { title: 'Microsoft 365 Entegrasyonu', desc: 'CRM ve Office 365 entegrasyonu' },
+            webapps: { title: 'Web Uygulamaları', desc: 'C# ve .NET ile özel çözümler' },
+            barcode: { title: 'Barkod Sistemleri', desc: 'Satış ve pazarlama sistemleri' }
         },
         timeline: {
             afe: 'CRM & Microsoft 365 Entegrasyonu',
@@ -69,7 +71,14 @@ const translations = {
         contact: { title: 'İletişim', email: 'Email', phone: 'Telefon', address: 'Adres' },
         form: { name: 'Adınız', email: 'Email Adresiniz', subject: 'Konu', message: 'Mesajınız', send: 'Mesaj Gönder', sending: 'Gönderiliyor...' },
         footer: { rights: '© 2024 Bahadır Perveli. Tüm hakları saklıdır.' },
-        notify: { emailSent: 'Mesajınız başarıyla gönderildi! En kısa sürede size dönüş yapacağım.', copyEmail: 'Email adresi kopyalandı!', copyPhone: 'Telefon numarası kopyalandı!', emailOpening: 'Email istemcisi açılıyor... (SMTP servisi şu anda kullanılamıyor)' }
+        notify: { emailSent: 'Mesajınız başarıyla gönderildi! En kısa sürede size dönüş yapacağım.', copyEmail: 'Email adresi kopyalandı!', copyPhone: 'Telefon numarası kopyalandı!', emailOpening: 'Email istemcisi açılıyor... (SMTP servisi şu anda kullanılamıyor)' },
+        featured: { title: 'Öne Çıkan Projeler' },
+        services: {
+            title: 'Hizmetlerim',
+            api: { title: 'API Geliştirme', desc: 'Ölçeklenebilir REST API’ler ve entegrasyon çözümleri.' },
+            crm: { title: 'CRM & Entegrasyon', desc: 'Kurumsal CRM süreçleri, modül geliştirme ve entegrasyonlar.' },
+            data: { title: 'Veri & Raporlama', desc: 'SQL optimizasyonu, rapor otomasyonu ve veri analizi.' }
+        }
     },
     en: {
         nav: { home: 'Home', about: 'About', experience: 'Experience', skills: 'Skills', contact: 'Contact' },
@@ -78,7 +87,8 @@ const translations = {
             subtitle: 'Software Developer',
             description: 'I\'m a software developer with 5+ years of experience. I specialize in .NET technologies, CRM systems, API development, and database management. I delivered 15+ successful projects across 6 companies, focusing on functional and maintainable solutions.',
             ctaContact: 'Contact Me',
-            ctaMore: 'Learn More'
+            ctaMore: 'Learn More',
+            ctaProjects: 'View Projects'
         },
         about: {
             title: 'About Me',
@@ -92,6 +102,7 @@ const translations = {
         experience: {
             title: 'Experience',
             currentDuration: 'Oct 2024 - Present',
+            yoreDuration: 'Jul 2023 - Jul 2024',
             statActiveProjects: 'Active Projects',
             statTechnologies: 'Technologies',
             statMonths: 'Months',
@@ -105,14 +116,14 @@ const translations = {
             }
         },
         projects: {
-            penti: { desc: 'SQL reporting, .NET development' },
-            koton: { desc: 'Server-client architecture optimization' },
-            ayakkabi: { desc: 'Performance analysis and report automation' },
-            ingage: { desc: 'Module integration and development' },
-            eba: { desc: 'Workflow module developed from scratch' },
-            m365: { desc: 'CRM and Office 365 integration' },
-            webapps: { desc: 'Custom solutions with C# and .NET' },
-            barcode: { desc: 'Sales and marketing systems' }
+            penti: { title: 'Penti CRM', desc: 'SQL reporting, .NET development' },
+            koton: { title: 'Koton CRM', desc: 'Server-client architecture optimization' },
+            ayakkabi: { title: 'Ayakkabı Dünyası', desc: 'Performance analysis and report automation' },
+            ingage: { title: 'Ingage CRM', desc: 'Module integration and development' },
+            eba: { title: 'eBa Workflow', desc: 'Workflow module developed from scratch' },
+            m365: { title: 'Microsoft 365 Integration', desc: 'CRM and Office 365 integration' },
+            webapps: { title: 'Web Applications', desc: 'Custom solutions with C# and .NET' },
+            barcode: { title: 'Barcode Systems', desc: 'Sales and marketing systems' }
         },
         timeline: {
             afe: 'CRM & Microsoft 365 Integration',
@@ -137,7 +148,14 @@ const translations = {
         contact: { title: 'Contact', email: 'Email', phone: 'Phone', address: 'Address' },
         form: { name: 'Your Name', email: 'Your Email', subject: 'Subject', message: 'Your Message', send: 'Send Message', sending: 'Sending...' },
         footer: { rights: '© 2024 Bahadır Perveli. All rights reserved.' },
-        notify: { emailSent: 'Your message has been sent successfully! I will get back to you shortly.', copyEmail: 'Email address copied!', copyPhone: 'Phone number copied!', emailOpening: 'Opening email client... (SMTP service is not available right now)' }
+        notify: { emailSent: 'Your message has been sent successfully! I will get back to you shortly.', copyEmail: 'Email address copied!', copyPhone: 'Phone number copied!', emailOpening: 'Opening email client... (SMTP service is not available right now)' },
+        featured: { title: 'Featured Projects' },
+        services: {
+            title: 'Services',
+            api: { title: 'API Development', desc: 'Scalable REST APIs and integration solutions.' },
+            crm: { title: 'CRM & Integration', desc: 'Enterprise CRM processes, module development and integrations.' },
+            data: { title: 'Data & Reporting', desc: 'SQL optimization, report automation and data analysis.' }
+        }
     }
 };
 
@@ -208,6 +226,38 @@ document.addEventListener('DOMContentLoaded', () => {
             setLanguage(current === 'tr' ? 'en' : 'tr');
         });
     }
+});
+
+// Featured carousel controls
+document.addEventListener('DOMContentLoaded', () => {
+    const track = document.getElementById('featuredTrack');
+    const prevBtn = document.querySelector('.carousel-btn.prev');
+    const nextBtn = document.querySelector('.carousel-btn.next');
+    if (!track || !prevBtn || !nextBtn) return;
+
+    const getStep = () => {
+        const firstCard = track.querySelector('.carousel-card');
+        if (!firstCard) return 300;
+        const cardWidth = firstCard.getBoundingClientRect().width;
+        const styles = getComputedStyle(track);
+        const gap = parseFloat(styles.columnGap || styles.gap || '16');
+        return cardWidth + gap;
+    };
+
+    prevBtn.addEventListener('click', () => {
+        track.scrollBy({ left: -getStep(), behavior: 'smooth' });
+    });
+    nextBtn.addEventListener('click', () => {
+        track.scrollBy({ left: getStep(), behavior: 'smooth' });
+    });
+
+    // Enable wheel horizontal scroll normalization
+    track.addEventListener('wheel', (e) => {
+        if (Math.abs(e.deltaX) < Math.abs(e.deltaY)) {
+            track.scrollLeft += e.deltaY;
+            e.preventDefault();
+        }
+    }, { passive: false });
 });
 
 // Theme Toggle Functionality

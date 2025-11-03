@@ -40,24 +40,93 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section id="home" class="hero hero-modern reveal-section">
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-text">
+                    <div class="hero-badges">
+                        <span class="badge" data-i18n="hero.subtitle">Software Developer</span>
+                        <span class="badge badge-ghost">.NET · C# · SQL</span>
+                    </div>
                     <h1 class="hero-title" data-i18n-html="hero.title">Merhaba, Ben <span class="highlight">Bahadır Perveli</span></h1>
-                    <h2 class="hero-subtitle" data-i18n="hero.subtitle">Software Developer</h2>
-                    <p class="hero-description" data-i18n="hero.description">
-                        5+ yıllık deneyime sahip bir yazılım geliştiriciyim. .NET teknolojileri, CRM sistemleri, API geliştirme ve veritabanı yönetimi konularında uzmanlaştım. 6 farklı şirkette 15+ başarılı proje teslim ederek işlevsel ve sürdürülebilir çözümler üretmeye odaklıyım.
-                    </p>
+                    <p class="hero-description" data-i18n="hero.description">5+ yıllık deneyime sahip bir yazılım geliştiriciyim...</p>
                     <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary" data-i18n="hero.ctaContact">İletişime Geç</a>
-                        <a href="#about" class="btn btn-secondary" data-i18n="hero.ctaMore">Daha Fazla Bilgi</a>
+                        <a href="#featured" class="btn btn-primary" data-i18n="hero.ctaProjects">Projeleri İncele</a>
+                        <a href="#contact" class="btn btn-secondary" data-i18n="hero.ctaContact">İletişime Geç</a>
+                    </div>
+                    <div class="hero-metrics">
+                        <div class="metric"><span>5+</span><small data-i18n="about.statYears">Yıl Deneyim</small></div>
+                        <div class="metric"><span>15+</span><small data-i18n="about.statProjects">Başarılı Proje</small></div>
+                        <div class="metric"><span>6</span><small data-i18n="about.statCompanies">Farklı Şirket</small></div>
+                    </div>
+                    <div class="hero-social">
+                        <a href="mailto:bahadirperveli01@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="tel:+905305056648" title="Phone"><i class="fas fa-phone"></i></a>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <div class="image-placeholder">
-                        <i class="fas fa-user-tie"></i>
+                    <div class="card-stack">
+                        <div class="stack-card primary"><i class="fas fa-code"></i><span>.NET</span></div>
+                        <div class="stack-card secondary"><i class="fas fa-database"></i><span>SQL</span></div>
+                        <div class="stack-card tertiary"><i class="fas fa-users-cog"></i><span>CRM</span></div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Carousel -->
+    <section id="featured" class="featured reveal-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="featured.title">Öne Çıkan Projeler</h2>
+            <div class="carousel">
+                <button class="carousel-btn prev" aria-label="Prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="carousel-track" id="featuredTrack">
+                    <a class="carousel-card" href="#experience">
+                        <div class="project-icon"><i class="fas fa-shopping-bag"></i></div>
+                        <h4 data-i18n="projects.penti.title">Penti CRM</h4>
+                        <p data-i18n="projects.penti.desc">SQL raporlama, .NET geliştirme</p>
+                    </a>
+                    <a class="carousel-card" href="#experience">
+                        <div class="project-icon"><i class="fas fa-tshirt"></i></div>
+                        <h4 data-i18n="projects.koton.title">Koton CRM</h4>
+                        <p data-i18n="projects.koton.desc">Server-client mimarisi optimizasyonu</p>
+                    </a>
+                    <a class="carousel-card" href="#experience">
+                        <div class="project-icon"><i class="fas fa-shoe-prints"></i></div>
+                        <h4 data-i18n="projects.ayakkabi.title">Ayakkabı Dünyası</h4>
+                        <p data-i18n="projects.ayakkabi.desc">Performans analizi ve rapor otomasyonu</p>
+                    </a>
+                    <a class="carousel-card" href="#experience">
+                        <div class="project-icon"><i class="fas fa-project-diagram"></i></div>
+                        <h4 data-i18n="projects.eba.title">eBa Workflow</h4>
+                        <p data-i18n="projects.eba.desc">Workflow modülü sıfırdan geliştirme</p>
+                    </a>
+                </div>
+                <button class="carousel-btn next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services reveal-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="services.title">Hizmetlerim</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-plug"></i></div>
+                    <h3 data-i18n="services.api.title">API Geliştirme</h3>
+                    <p data-i18n="services.api.desc">Ölçeklenebilir REST API’ler ve entegrasyon çözümleri.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-sitemap"></i></div>
+                    <h3 data-i18n="services.crm.title">CRM & Entegrasyon</h3>
+                    <p data-i18n="services.crm.desc">Kurumsal CRM süreçleri, modül geliştirme ve entegrasyonlar.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-chart-bar"></i></div>
+                    <h3 data-i18n="services.data.title">Veri & Raporlama</h3>
+                    <p data-i18n="services.data.desc">SQL optimizasyonu, rapor otomasyonu ve veri analizi.</p>
                 </div>
             </div>
         </div>
@@ -180,7 +249,7 @@
                             <div class="company-info">
                                 <h3>Yöre Group</h3>
                                 <h4>Software Developer</h4>
-                                <span class="duration">Tem 2023 - Tem 2024</span>
+                                <span class="duration" data-i18n="experience.yoreDuration">Tem 2023 - Tem 2024</span>
                                 <span class="location">Kocaeli</span>
                             </div>
                             <div class="status-badge completed">
@@ -244,7 +313,7 @@
                         <div class="project-icon">
                             <i class="fas fa-shopping-bag"></i>
                         </div>
-                        <h4>Penti CRM</h4>
+                        <h4 data-i18n="projects.penti.title">Penti CRM</h4>
                         <p data-i18n="projects.penti.desc">SQL raporlama, .NET geliştirme</p>
                         <span class="project-company">Uzman CRM</span>
                     </div>
@@ -253,7 +322,7 @@
                         <div class="project-icon">
                             <i class="fas fa-tshirt"></i>
                         </div>
-                        <h4>Koton CRM</h4>
+                        <h4 data-i18n="projects.koton.title">Koton CRM</h4>
                         <p data-i18n="projects.koton.desc">Server-client mimarisi optimizasyonu</p>
                         <span class="project-company">Uzman CRM</span>
                     </div>
@@ -262,7 +331,7 @@
                         <div class="project-icon">
                             <i class="fas fa-shoe-prints"></i>
                         </div>
-                        <h4>Ayakkabı Dünyası</h4>
+                        <h4 data-i18n="projects.ayakkabi.title">Ayakkabı Dünyası</h4>
                         <p data-i18n="projects.ayakkabi.desc">Performans analizi ve rapor otomasyonu</p>
                         <span class="project-company">Uzman CRM</span>
                     </div>
@@ -271,7 +340,7 @@
                         <div class="project-icon">
                             <i class="fas fa-chart-line"></i>
                         </div>
-                        <h4>Ingage CRM</h4>
+                        <h4 data-i18n="projects.ingage.title">Ingage CRM</h4>
                         <p data-i18n="projects.ingage.desc">Modül entegrasyonu ve geliştirme</p>
                         <span class="project-company">Uzman CRM</span>
                     </div>
@@ -280,7 +349,7 @@
                         <div class="project-icon">
                             <i class="fas fa-project-diagram"></i>
                         </div>
-                        <h4>eBa Workflow</h4>
+                        <h4 data-i18n="projects.eba.title">eBa Workflow</h4>
                         <p data-i18n="projects.eba.desc">Workflow modülü sıfırdan geliştirme</p>
                         <span class="project-company">Yöre Group</span>
                     </div>
@@ -289,7 +358,7 @@
                         <div class="project-icon">
                             <i class="fas fa-cloud"></i>
                         </div>
-                        <h4>Microsoft 365 Entegrasyonu</h4>
+                        <h4 data-i18n="projects.m365.title">Microsoft 365 Entegrasyonu</h4>
                         <p data-i18n="projects.m365.desc">CRM ve Office 365 entegrasyonu</p>
                         <span class="project-company">AFE Dijital</span>
                     </div>
@@ -298,7 +367,7 @@
                         <div class="project-icon">
                             <i class="fas fa-globe"></i>
                         </div>
-                        <h4>Web Uygulamaları</h4>
+                        <h4 data-i18n="projects.webapps.title">Web Uygulamaları</h4>
                         <p data-i18n="projects.webapps.desc">C# ve .NET ile özel çözümler</p>
                         <span class="project-company">Sanca Software</span>
                     </div>
@@ -307,7 +376,7 @@
                         <div class="project-icon">
                             <i class="fas fa-barcode"></i>
                         </div>
-                        <h4>Barkod Sistemleri</h4>
+                        <h4 data-i18n="projects.barcode.title">Barkod Sistemleri</h4>
                         <p data-i18n="projects.barcode.desc">Satış ve pazarlama sistemleri</p>
                         <span class="project-company">Gökbim</span>
                     </div>
